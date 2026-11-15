@@ -11,7 +11,10 @@ keywords = ["ml", "ai", "machine-learning"]
 categories = ["science"]
 
 [dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
 
 [profile.release]
 opt-level = 3
+
+[lib]
+name = "sigmaos_ml"
+path = "src/lib.rs"
